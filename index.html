@@ -36,8 +36,6 @@
         fbq('init', '25890791860555871');
         fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=25890791860555871&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
 
     <!-- UTMify Tracking -->
@@ -46,6 +44,9 @@
 </head>
 
 <body>
+    <!-- Meta Pixel Noscript -->
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=25890791860555871&ev=PageView&noscript=1" /></noscript>
 
     <!-- Urgent Top Bar -->
     <div class="alert-bar">
@@ -390,7 +391,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>
