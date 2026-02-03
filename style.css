@@ -196,10 +196,11 @@ p {
     width: 100%;
 }
 
-/* IMAGE CAROUSELS: Force Square (Hero + Gallery) */
+/* IMAGE CAROUSELS: Flexible Height */
 .hero-carousel .carousel,
 .gallery-carousel .carousel {
-    /* aspect-ratio: 1 / 1;  REMOVED to allow auto height */
+    height: auto;
+    /* Allow container to adapt */
 }
 
 .carousel-inner {
@@ -212,12 +213,10 @@ p {
 .hero-carousel .carousel-inner,
 .gallery-carousel .carousel-inner {
     height: auto;
-    /* Changed from 100% to auto */
 }
 
 .testimonial-carousel .carousel-inner {
     height: auto;
-    /* Fit text content */
     align-items: stretch;
 }
 
@@ -233,14 +232,11 @@ p {
 .hero-carousel .carousel-item,
 .gallery-carousel .carousel-item {
     height: auto;
-    /* Changed from 100% to auto */
 }
 
 .testimonial-carousel .carousel-item {
     height: auto;
-    /* Fit text */
     padding: 10px 5px;
-    /* Spacing */
 }
 
 /* Hero Images Force Fill */
@@ -256,9 +252,7 @@ p {
 .gallery-carousel .carousel-item>img {
     width: 100%;
     height: auto !important;
-    /* Changed from 100% */
     object-fit: contain !important;
-    /* Changed from cover */
     display: block;
 }
 
